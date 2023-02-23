@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "pages": {
+      "companies": "Für Unternehmen",
+      "students": "Für Studenten",
+      "vacancies": "Stellen",
+      "login": "Login",
+      "logout": "Logout",
+      "signup": "Anmelden",
+      "contact": "Kontakt",
+      "terms": "Rechtliches",
+      "profile": "Profil"
+    }
+  },
+  "company": {
+    "email": "E-Mail für Stellenmeldungen/Bewerbungen"
+  },
+  "user": {
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "company": "Firma",
+    "street1": "Strasse / Hausnummer",
+    "street2": "Adresszusatz",
+    "zip": "PLZ",
+    "city": "Ortschaft",
+    "country": "Land",
+    "phone": "Telefon Festnetz",
+    "mobile": "Telefon Mobil",
+    "nationality": "Nationalität",
+    "permit": "für Ausländer: Bewliigungstyp",
+    "marital": "Zivilstand",
+    "shift": "Schichtarbeit",
+    "shift_possible": "Schichtarbeit möglich",
+    "mobility": "Mobilität",
+    "car": "Auto",
+    "bike": "Motorrad / Motorroller",
+    "publictransport": "ÖV",
+    "birthdate": "Geburtsdatum",
+    "mail": "E-Mail",
+    "password": "Passwort",
+    "jobZip": "Stelle in Region (PLZ – nur FL & CH)",
+    "radius": "Im Umkreis von (km)",
+    "notes": "Notizen",
+    "salutation": "Anrede",
+    "qualification": {
+      "qualificationtype": "Ausbildung",
+      "year": "Abschlussjahr",
+      "desc": "Beschreibung",
+      "profession": "Berufsfeld",
+      "study": "Studienrichtung",
+      "add": "hinzufügen"
+    },
+    "language": {
+      "language": "Sprache",
+      "languagelevel_oral": "mündlich",
+      "languagelevel_written": "schriftlich",
+      "add": "hinzufügen"
+    },
+    "skills": "Skills",
+    "upload": {
+      "filetype": "Dateityp",
+      "desc": "Bezeichnung"
+    }
+  },
+  "upload": {
+    "foto": "Foto auswählen"
+  },
+  "vacancy": {
+    "title": "Stellentitel",
+    "workplace": "Arbeitsort",
+    "requirements": "Anforderungen",
+    "workload": "Pensum",
+    "workload_from": "Pensum (Min)",
+    "workload_to": "Pensum (Max))",
+    "vacancytype": "Nebenjob, Praktikum, Ferienjob, Dauerstelle",
+    "limited": "Befristet",
+    "date_from": "Einsatzdauer / Beginn",
+    "qualificationtypes": "Bildungsstufe",
+    "studies": "Studienrichtung",
+    "professions": "Berufsfeld",
+    "company1": "Firma",
+    "company2": "Firma Zusatzbezeichnung",
+    "street1": "Strasse 1",
+    "street2": "Strasse 2",
+    "zip": "PLZ",
+    "city": "Ort",
+    "contact": "Kontakt",
+    "email": "E-Mail",
+    "add": "Stelle speichern",
+    "update": "Stelle aktualisieren"
+  }
+}

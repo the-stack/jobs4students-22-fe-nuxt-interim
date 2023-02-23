@@ -1,0 +1,54 @@
+$primary: #63c2cd;
+$primaryLight: #8fc6cc;
+$secondary: #e62154;
+$accent: #e62154;
+$negative: #FFFFFF;
+$disabled: #EEEEEE;
+$disabled_dark: #9F9F9F;
+$error: #BF1B2D;
+$warning: #D18F23;
+$info: #51831B;
+$success: #60A515;
+$font:#3A4347;
+
+.text-- {
+  &negative {
+    color: $negative!important;
+  }
+  &primaryDark {
+    color: $primary!important;
+  }
+  &primaryLight {
+    color: $primaryLight!important;
+  }
+  &disabled {
+    color: $disabled!important;
+  }
+  &disabled_dark {
+    color: $disabled_dark!important;
+  }
+  &accent {
+    color: $accent!important;
+  }
+  &primary {
+    color: $primary!important;
+  }
+  &secondary {
+    color: $secondary!important;
+  }
+  &error {
+    color: $error!important;
+  }
+  &warning {
+    color: $warning!important;
+  }
+  &info {
+    color: $info!important;
+  }
+  &success {
+    color: $success!important;
+  }
+  &font {
+    color: $font!important;
+  }
+}

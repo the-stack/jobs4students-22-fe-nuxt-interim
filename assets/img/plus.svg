@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>AC8955A6-67F1-4182-A8DC-E0E9E9CDABFD-7520-00004063303EC188</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wizard-1-Ich-Suche-2" transform="translate(-237.000000, -601.000000)">
+            <g id="Group-2" transform="translate(168.000000, 152.000000)">
+                <g id="Group-3" transform="translate(48.000000, 168.000000)">
+                    <g id="Button-Primary" transform="translate(16.000000, 272.000000)">
+                        <g id="Icon-Add" transform="translate(0.000000, 4.000000)">
+                            <rect id="Rectangle-4" x="0" y="0" width="32" height="32"></rect>
+                            <path d="M25,17.5 L17.5,17.5 L17.5,25 C17.5,26.104 17.104,27 16,27 C14.896,27 14.5,26.104 14.5,25 L14.5,17.5 L7,17.5 C5.895,17.5 5,17.105 5,16 C5,14.896 5.895,14.5 7,14.5 L14.5,14.5 L14.5,7 C14.5,5.896 14.896,5 16,5 C17.104,5 17.5,5.896 17.5,7 L17.5,14.5 L25,14.5 C26.104,14.5 27,14.896 27,16 C27,17.105 26.104,17.5 25,17.5" id="add" fill="#51831B"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
