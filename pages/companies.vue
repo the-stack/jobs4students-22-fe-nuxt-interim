@@ -71,6 +71,14 @@
                   Melden Sie uns unverbindlich Ihre zu besetzende Stelle - Sie hören umgehend von uns
                 </v-list-item-content>
               </v-list-item>
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon large color="secondary">mdi-check</v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                  Unser Bewerberpool umfasst über 2500 registrierte StudentInnen. Inserieren Sie ihre Stelle zu günstigen Konditionen.
+                </v-list-item-content>
+              </v-list-item>
             </v-list>
           </v-col>
           <v-col cols="12" md="5" class="mt-n16" order="1" order-md="2">
