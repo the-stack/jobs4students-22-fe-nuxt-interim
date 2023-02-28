@@ -308,7 +308,7 @@
                      height="12px"
                      :src="require('@/assets/img/s-cross.svg')"></v-img>
             </v-col>
-            <v-col cols="auto" class="text-button text--accent">made in Switzerland, v2</v-col>
+            <v-col cols="auto" class="text-button text--fontPrimary">made in Switzerland, v2</v-col>
             <v-spacer></v-spacer>
           </v-row>
         </v-col>
