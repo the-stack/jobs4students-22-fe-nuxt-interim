@@ -106,7 +106,7 @@
             block
             depressed
             color="primary"
-            class="black--text"
+            class="text--negative"
             @click="itemAdd"
         >{{ $tc('user.qualification.add') }}</v-btn>
       </v-card-actions>

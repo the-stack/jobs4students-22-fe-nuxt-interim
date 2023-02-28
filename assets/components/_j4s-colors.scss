@@ -1,9 +1,10 @@
-$primary: #63c2cd;
-$primaryLight: #8fc6cc;
-$secondary: #e62154;
-$accent: #e62154;
+$primary: #31417b;
+$fontPrimary: #31417b;
+$primaryLight: #c8cfe9;
+$secondary: #c8cfe9;
+$accent: #98874f;
 $negative: #FFFFFF;
-$disabled: #EEEEEE;
+$disabled: #f8f8f8;
 $disabled_dark: #9F9F9F;
 $error: #BF1B2D;
 $warning: #D18F23;
@@ -14,6 +15,9 @@ $font:#3A4347;
 .text-- {
   &negative {
     color: $negative!important;
+  }
+  &fontPrimary {
+    color: $primary!important;
   }
   &primaryDark {
     color: $primary!important;

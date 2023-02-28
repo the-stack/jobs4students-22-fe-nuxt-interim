@@ -6,7 +6,7 @@
             <v-col cols="12" >
               <v-row v-if="!userid">
                 <v-col cols="12">
-                  <h2 class="text-h4 text-md-h2 mb-4">Login mit <span class="text--accent">bestehendem</span> Account</h2>
+                  <h2 class="text-h4 text-md-h2 mb-4 text--negative">Login mit <span class="text--accent">bestehendem</span> Account</h2>
                   <v-card>
                     <login-form></login-form>
                   </v-card>
@@ -35,7 +35,7 @@
           </v-row>
           <v-row v-if="!userid" class="mt-12">
             <v-col cols="12" class="mb-5">
-              <h2 class="text-h4 text-md-h2 mb-4">Noch <span class="text--accent">keinen</span> Account?</h2>
+              <h2 class="text-h4 text-md-h2 mb-4 text--negative">Noch <span class="text--accent">keinen</span> Account?</h2>
               <v-card>
                 <v-card-text>
                   <v-row>

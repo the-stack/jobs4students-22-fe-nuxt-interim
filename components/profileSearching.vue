@@ -90,7 +90,7 @@
             block
             depressed
             color="primary"
-            class="black--text"
+            class="text--negative"
             @click="availabilityAdd"
         >Jobanfrage hinzufügen</v-btn>
       </v-card-actions>

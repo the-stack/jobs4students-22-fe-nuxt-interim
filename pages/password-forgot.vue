@@ -8,7 +8,7 @@
               <v-row>
                 <v-col cols="12">
                   <v-card class="mb-1" flat color="transparent">
-                    <v-card-title class="px-0">Passwort zurücksetzen</v-card-title>
+                    <v-card-title class="px-0 text--negative">Passwort zurücksetzen</v-card-title>
                   </v-card>
 
                   <v-card v-if="!passwordResetSent">
@@ -31,8 +31,9 @@
                       <v-row>
                         <v-col cols="auto" class="pa-5">
                           <v-btn
+                            dark
                             :disabled="!valid"
-                            block color="primary" class="text--font text-none" @click="resetPassword">Passwort zurücksetzen</v-btn>
+                            block color="primary" class="text-none" @click="resetPassword">Passwort zurücksetzen</v-btn>
                         </v-col>
                       </v-row>
                     </v-card-actions>

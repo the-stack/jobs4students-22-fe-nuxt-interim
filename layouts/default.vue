@@ -11,12 +11,11 @@
           <v-btn text
                  :ripple="false"
                  link to="/"
-                 tile
-                 color="negative">
+                 tile color="negative">
             <v-img contain
                    max-width="210px"
                    max-height="80px"
-                   :src="require('@/assets/img/j4S/logo_j4s_22.svg')"></v-img>
+                   :src="require('@/assets/img/logo_innovatis-interim.svg')"></v-img>
           </v-btn>
         </v-card-title>
         <v-divider></v-divider>
@@ -69,7 +68,7 @@
         </v-card-text>
       </v-card>
     </v-navigation-drawer>
-    <v-app-bar app flat color="primaryLight" height="70px">
+    <v-app-bar app flat color="disabled" height="70px">
       <v-btn text
              :ripple="false"
              link to="/"
@@ -80,7 +79,7 @@
                position="start start"
                max-width="210px"
                max-height="56px"
-               :src="require('@/assets/img/j4S/logo_j4s_22.svg')"></v-img>
+               :src="require('@/assets/img/logo_innovatis-interim.svg')"></v-img>
       </v-btn>
       <v-spacer></v-spacer>
 <!--
@@ -201,7 +200,7 @@
         </v-menu>
       </div>
 
-      <v-app-bar-nav-icon v-show="isSmAndDown" @click="drawer = true"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="text--primary" v-show="isSmAndDown" @click="drawer = true"></v-app-bar-nav-icon>
     </v-app-bar>
     <v-main>
       <v-container fluid class="pa-0">
@@ -275,7 +274,7 @@
       <template v-slot:action="{ attrs }">
         <v-btn
           v-if="emailVerifiedSendButton"
-          color="primary"
+          color="negative"
           text
           v-bind="attrs"
           @click="resendEmailVerification()"
@@ -284,7 +283,7 @@
         </v-btn>
       </template>
     </v-snackbar>
-    <v-footer app :height="!isMobile ? '64px': '100px'" color="primaryLight">
+    <v-footer app :height="!isMobile ? '64px': '100px'" color="disabled">
       <v-row align="center" dense>
         <v-col cols="12" sm="auto" class="pa-0">
           <v-row dense align="center">

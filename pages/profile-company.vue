@@ -7,7 +7,7 @@
             <v-card class="pa-5" color="transparent" flat>
               <h1 class="text-h1 text-md-h1 text-center">
                 <span class="text--accent">Hi {{ firstname }}!</span><br>
-                <span class="text-h1 text-md-h1 text--black">Schön dich hier zu haben!</span>
+                <span class="text-h1 text-md-h1 text--negative">Schön dich hier zu haben!</span>
               </h1>
             </v-card>
           </v-col>
@@ -41,7 +41,8 @@
                       <v-btn color="primary"
                              :disabled="!unsaved.profile"
                              large
-                             class="text--font text-none font-weight-black"
+                             dark
+                             class=" text-none font-weight-black"
                              @click="saveStep">
                         Speichern
                       </v-btn>
@@ -71,7 +72,8 @@
                       <v-btn color="primary"
                              :disabled="!unsaved.profile"
                              large
-                             class="text--font text-none font-weight-black"
+                             dark
+                             class=" text-none font-weight-black"
                              @click="saveStep">
                         Speichern
                       </v-btn>

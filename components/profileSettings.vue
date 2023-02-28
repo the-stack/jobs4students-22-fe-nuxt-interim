@@ -20,7 +20,8 @@
             <v-spacer></v-spacer>
             <v-btn color="primary"
                    large
-                   class="text--font text-none font-weight-black"
+                   dark
+                   class="text-none font-weight-black"
                    @click="userUpdate">
               Mail-Einstellungen Speichern
             </v-btn>
@@ -39,7 +40,6 @@
             <v-spacer></v-spacer>
             <v-btn color="error"
                    large
-
                    @click="dialogDelete = true">
               Profil Löschen
             </v-btn>

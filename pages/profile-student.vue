@@ -55,6 +55,7 @@
                     <v-spacer></v-spacer>
                     <v-col cols="auto">
                       <v-btn color="primary"
+                             dark
                              :disabled="!unsaved.profile"
                              large
                              class="text--font text-none font-weight-black"
@@ -102,7 +103,8 @@
                     <v-col cols="auto">
                       <v-btn color="primary"
                              large
-                             class="text--font text-none font-weight-black"
+                             dark
+                             class="text-none font-weight-black"
                              @click="userUpdate">
                         Speichern
                       </v-btn>
@@ -163,7 +165,8 @@
                     <v-col cols="auto">
                       <v-btn color="primary"
                              large
-                             class="text--font text-none font-weight-black"
+                             dark
+                             class="text-none font-weight-black"
                              @click="userUpdate">
                         Speichern
                       </v-btn>

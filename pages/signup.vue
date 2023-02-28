@@ -13,7 +13,7 @@
                 <v-row class="pa-4">
                   <v-spacer></v-spacer>
                   <v-col cols="auto">
-                    <v-btn v-if="!user_id" x-large block color="primary" class="text--font font-weight-black" @click="signup">
+                    <v-btn v-if="!user_id" dark x-large block color="primary" class="font-weight-black" @click="signup">
                       Account erstellen
                     </v-btn>
                   </v-col>

@@ -3,8 +3,8 @@
     <v-sheet class="transparent">
       <v-container>
         <v-row dense class="my-4 my-sm-10 my-md-16" justify="space-between">
-          <v-col cols="12" sm="6" md="5">
-            <h1 class="text-h2">
+          <v-col cols="12" sm="6" md="5" class="text--negative">
+            <h1 class="text-h2 text--accent">
               Wir lieben ehrliches Feedback
             </h1>
             <p>Ob Ferienjob, Praktikum oder Nebenjob, wir suchen für dich die passenden Studentenjobs. Absolventen und
@@ -121,41 +121,151 @@
             </v-card>
           </v-col>
         </v-row>
-        <v-row class="mb-5 mb-md-16" justify="center">
-          <v-col cols="auto">
-            <h2 class="text-h2">Partner</h2>
-          </v-col>
-        </v-row>
-        <v-row class="mb-10 mb-md-16" align="center" justify="center">
-          <v-col cols="6" sm="3" align="center">
-            <a href="https://careers.hilti.com/en/students-and-recent-graduates" target="_blank">
-              <v-img contain
-                     max-width="90%"
-                     :src="require('@/assets/img/hilti_logo.png')"></v-img>
-            </a>
-          </v-col>
-          <v-col cols="6" sm="3" align="center">
-            <a href="https://www.swarovskigroup.com/S/careers/WorkAtSwarovski.de.html" target="_blank">
-              <v-img contain
-                     width="90%"
-                     :src="require('@/assets/img/swarovski_black_219px.png')"></v-img>
-            </a>
-          </v-col>
-          <v-col cols="6" sm="3" align="center">
-            <a href="https://innovatis.net" target="_blank">
-              <v-img contain
-                     width="90%"
-                     :src="require('@/assets/img/logo_innovatis_interimag.svg')"></v-img>
-            </a>
-          </v-col>
-          <v-col cols="6" sm="3" align="center">
-            <a href="https://the-stack.dev" target="_blank">
-              <v-img contain
-                     width="90%"
-                     :src="require('@/assets/img/theStack_logo_coding-black.svg')"></v-img>
-            </a>
-          </v-col>
-        </v-row>
+      </v-container>
+      <v-container fluid class="pa-0">
+        <v-sheet color="disabled" align="center" justify="center" height="600px" class="py-16">
+          <v-container>
+            <v-row justify="center">
+              <v-col cols="auto">
+                <h2 class="text-h2 text--fontPrimary">Partner</h2>
+              </v-col>
+            </v-row>
+            <v-row justify="center">
+              <v-col cols="auto">
+                <v-img contain
+                       max-width="20px"
+                       :src="require('@/assets/img/favicon.svg')"></v-img>
+              </v-col>
+            </v-row>
+            <v-row justify="center">
+              <v-col cols="auto">
+                <p class="ma-0 font-weight-bold">Erfahren Sie hier mehr über die jahrelange Zusammenarbeit mit unseren
+                  vertrauenswürdigen Partnerfirmen</p>
+              </v-col>
+            </v-row>
+          </v-container>
+          <v-container fluid class="mt-10">
+            <v-row dense>
+              <v-col cols="12">
+                <v-row align="center" justify="center">
+                  <v-col cols="10">
+                    <v-hover v-slot="{hover}">
+                      <v-carousel v-model="partnerCarousel"
+                                  height="234"
+                                  continuous
+                                  :cycle="!hover"
+                                  interval="2000"
+                                  hide-delimiter-background
+                                  show-arrows-on-hover
+                                  delimiter-icon="mdi-minus">
+                        <v-carousel-item>
+                          <v-row dense justify="center">
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/bexio-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/consolidate-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/europa-3000-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                          </v-row>
+                        </v-carousel-item>
+                        <v-carousel-item>
+                          <v-row dense justify="center">
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/bhuchhaltungs-butler-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/e-salaer-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/small-invoice-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                          </v-row>
+                        </v-carousel-item>
+                        <v-carousel-item>
+                          <v-row dense justify="center">
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/bexio-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/consolidate-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/europa-3000-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                          </v-row>
+                        </v-carousel-item>
+                        <v-carousel-item>
+                          <v-row dense justify="center">
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/bhuchhaltungs-butler-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/e-salaer-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                            <v-col cols="auto">
+                              <v-card tile flat outlined width="366">
+                                <v-img cover
+                                       max-height="185"
+                                       src="http://interim.ch/wp-content/uploads/2023/02/small-invoice-logo.png"></v-img>
+                              </v-card>
+                            </v-col>
+                          </v-row>
+                        </v-carousel-item>
+                      </v-carousel>
+                    </v-hover>
+                  </v-col>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-sheet>
       </v-container>
     </v-sheet>
   </v-container>

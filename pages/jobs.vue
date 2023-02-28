@@ -5,8 +5,8 @@
 
         <v-row dense class="mt-4 mt-sm-10 mt-md-16" justify="space-between">
           <v-col cols="12" sm="12" md="12">
-            <h2 class="text-h4 text-md-h2 mb-4">Aktuelle <span class="text--accent">Stellen</span></h2>
-            <h3 class="text-h5">Hier findest du alle offenen Jobs. Feststelle, Praktikum, Nebenjob oder Kurzeinsatz – wir sind stets auf der Suche nach motivierten Studierenden.</h3>
+            <h2 class="text-h4 text-md-h2 mb-4 text--negative">Aktuelle <span class="text--accent">Stellen</span></h2>
+            <h3 class="text-h5 text--negative">Hier findest du alle offenen Jobs. Feststelle, Praktikum, Nebenjob oder Kurzeinsatz – wir sind stets auf der Suche nach motivierten Studierenden.</h3>
           </v-col>
         </v-row>
 

@@ -77,7 +77,7 @@
             block
             depressed
             color="primary"
-            class="black--text"
+            class="text--negative"
             @click="languageAdd"
         >{{ $tc('user.language.add') }}</v-btn>
       </v-card-actions>

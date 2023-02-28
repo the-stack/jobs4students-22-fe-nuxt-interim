@@ -4,7 +4,7 @@
       <v-container class="bg page-companies" fluid>
         <v-row dense class="my-0 my-md-16 mx-0 mx-md-4">
           <v-col cols="12" sm="5">
-            <v-card class="pa-5 mt-0 mt-md-16" color="#63C2CDDD">
+            <v-card dark class="pa-5 mt-0 mt-md-16" color="primary">
               <h1 class="text-h2 text-md-h2 text--accent">
                 Wir vermitteln flexible und motivierte junge Talente
               </h1>
@@ -19,7 +19,7 @@
       <v-container>
         <v-row dense class="my-10" justify="space-between">
           <v-col cols="12" md="6" class="mt-10 mt-md-0" order="2" order-md="1">
-            <h2 class="text-h3 text-md-h2">Unser <span class="text--accent">Service</span></h2>
+            <h2 class="text-h3 text-md-h2">Unser <span class="text--fontPrimary">Service</span></h2>
             <v-list two-line dense>
               <v-list-item>
                 <v-list-item-icon>

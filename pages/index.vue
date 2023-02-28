@@ -4,8 +4,8 @@
       <v-container class="bg page-index" fluid>
         <v-row dense class="my-0 my-md-16 mx-0 mx-md-4">
           <v-col cols="12" sm="5" class="pa-0">
-            <v-card class="pa-5 mt-4 mt-lg-16" color="#63C2CDDD">
-              <h1 class="text-h4 text-md-h2 text--accent">
+            <v-card class="pa-5 mt-4 mt-lg-16" color="#31417b6E">
+              <h1 class="text-h4 text-md-h2 text--fontPrimary">
                 {{ intro.title }}
               </h1>
               <nuxt-content :document="intro"/>
@@ -18,7 +18,7 @@
       <v-container>
         <v-row dense class="mt-0 mt-md-10 mb-md-16 mb-0">
           <v-col cols="12" md="7" class="mt-10 mt-md-0" order="2" order-md="1">
-            <h2 class="text-h3 text-md-h2">Deine <span class="text--accent">Vorteile</span></h2>
+            <h2 class="text-h3 text-md-h2">Deine <span class="text--fontPrimary">Vorteile</span></h2>
             <v-list two-line dense>
               <v-list-item>
                 <v-list-item-icon>
@@ -54,7 +54,7 @@
               </v-list-item>
             </v-list>
           </v-col>
-          <v-col cols="12" md="5"  class="mt-16 mt-lg-n16" order="1" order-md="2">
+          <v-col cols="12" md="5" class="mt-16 mt-lg-n16" order="1" order-md="2">
 
             <signup-form role="1" v-if="!userData.id"></signup-form>
             <v-card class="mt-n16" v-else>
@@ -63,8 +63,11 @@
               </v-card-title>
 
               <v-card-text>
-                Du bist aktuell als <strong class="text--accent">"{{ userData.firstname }} {{ userData.lastname }}"</strong> angemeldet. Falls du dich mit einem
-                anderen Login anmelden möchtest, dann <router-link to="/login" class="text--accent">klicke hier.</router-link>
+                Du bist aktuell als <strong class="text--accent">"{{ userData.firstname }} {{
+                  userData.lastname
+                }}"</strong> angemeldet. Falls du dich mit einem
+                anderen Login anmelden möchtest, dann
+                <router-link to="/login" class="text--accent">klicke hier.</router-link>
               </v-card-text>
             </v-card>
 
@@ -86,47 +89,143 @@
     </v-sheet>
     <v-sheet color="disabled" align="center" justify="center" height="600px" class="py-16">
       <v-container>
-
-        <v-row justify="center">
-          <v-col cols="auto" class="mb-5">
-            Jobs4Students AG - Balzers (FL) & Buchs SG<br>
-            Telefon +423 237 55 75 / +41 81 300 14 55 / Mail: <a href="mailto:info@jobs4students.ch">info@jobs4students.ch</a>
-          </v-col>
-        </v-row>
-
         <v-row justify="center">
           <v-col cols="auto">
-            <h2 class="text-h2">Partner</h2>
+            <h2 class="text-h2 text--fontPrimary">Partner</h2>
           </v-col>
         </v-row>
-        <v-row align="center">
-          <v-col cols="6" sm="3">
-            <a href="https://careers.hilti.com/en/students-and-recent-graduates" target="_blank">
-              <v-img contain
-                     max-width="90%"
-                     :src="require('@/assets/img/hilti_logo.png')"></v-img>
-            </a>
+        <v-row justify="center">
+          <v-col cols="auto">
+            <v-img contain
+                   max-width="20px"
+                   :src="require('@/assets/img/favicon.svg')"></v-img>
           </v-col>
-          <v-col cols="6" sm="3">
-            <a href="https://www.swarovskigroup.com/S/careers/WorkAtSwarovski.de.html" target="_blank">
-              <v-img contain
-                     width="90%"
-                     :src="require('@/assets/img/j4s-partner-swarovski.png')"></v-img>
-            </a>
+        </v-row>
+        <v-row justify="center">
+          <v-col cols="auto">
+            <p class="ma-0 font-weight-bold">Erfahren Sie hier mehr über die jahrelange Zusammenarbeit mit unseren
+              vertrauenswürdigen Partnerfirmen</p>
           </v-col>
-          <v-col cols="6" sm="3">
-            <a href="https://innovatis.net" target="_blank">
-              <v-img contain
-                     width="90%"
-                     :src="require('@/assets/img/logo_innovatis_interimag.svg')"></v-img>
-            </a>
-          </v-col>
-          <v-col cols="6" sm="3">
-            <a href="https://the-stack.dev" target="_blank">
-              <v-img contain
-                     width="90%"
-                     :src="require('@/assets/img/theStack_logo_coding-black.svg')"></v-img>
-            </a>
+        </v-row>
+      </v-container>
+      <v-container fluid class="mt-10">
+        <v-row dense>
+          <v-col cols="12">
+            <v-row align="center" justify="center">
+              <v-col cols="10">
+                <v-hover v-slot="{hover}">
+                <v-carousel v-model="partnerCarousel"
+                            height="234"
+                            continuous
+                            :cycle="!hover"
+                            interval="2000"
+                            hide-delimiter-background
+                            show-arrows-on-hover
+                            delimiter-icon="mdi-minus">
+                  <v-carousel-item>
+                    <v-row dense justify="center">
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/bexio-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/consolidate-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/europa-3000-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </v-carousel-item>
+                  <v-carousel-item>
+                    <v-row dense justify="center">
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/bhuchhaltungs-butler-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/e-salaer-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/small-invoice-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </v-carousel-item>
+                  <v-carousel-item>
+                    <v-row dense justify="center">
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/bexio-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/consolidate-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/europa-3000-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </v-carousel-item>
+                  <v-carousel-item>
+                    <v-row dense justify="center">
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/bhuchhaltungs-butler-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/e-salaer-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="auto">
+                        <v-card tile flat outlined width="366">
+                          <v-img cover
+                                 max-height="185"
+                                 src="http://interim.ch/wp-content/uploads/2023/02/small-invoice-logo.png"></v-img>
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </v-carousel-item>
+                </v-carousel>
+                </v-hover>
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
       </v-container>
@@ -142,12 +241,12 @@ export default {
   head() {
     return {
       title: "jobs4students",
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      script: [{src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'}],
     }
   },
   data() {
     return {
-
+      partnerCarousel: 0
     }
   },
   computed: {
@@ -170,8 +269,7 @@ export default {
       intro,
     }
   },
-  methods:{
-
+  methods: {
   },
 }
 </script>

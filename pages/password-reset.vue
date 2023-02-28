@@ -7,7 +7,7 @@
             <v-row>
               <v-col cols="12">
                 <v-card class="mb-1" flat color="transparent">
-                  <v-card-title class="px-0">Passwort zurücksetzen</v-card-title>
+                  <v-card-title class="px-0 text--negative">Passwort zurücksetzen</v-card-title>
                 </v-card>
                 <v-card>
                   <v-card-text>

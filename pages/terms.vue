@@ -4,7 +4,7 @@
       <v-container>
         <v-row dense class="my-0 my-md-16 mx-0 mx-md-4">
           <v-col cols="12" sm="6">
-            <v-card class="pa-5 mt-0 mt-md-16" color="#63C2CDDD">
+            <v-card class="pa-5 mt-0 mt-md-16" color="#31417b6E">
               <h1 class="text-h2">
                 Nutzungs- und Daten&shy;schutz&shy;be&shy;stim&shy;mun&shy;gen jobs4students
               </h1>

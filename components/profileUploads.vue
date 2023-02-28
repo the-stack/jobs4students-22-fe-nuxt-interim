@@ -73,7 +73,7 @@
             block
             depressed
             color="primary"
-            class="black--text"
+            class="text--negative"
             @click="uploadFile"
         >Datei hinzufügen</v-btn>
       </v-card-actions>

@@ -138,7 +138,7 @@
                                 <v-row>
                                   <v-spacer></v-spacer>
                                   <v-col cols="auto">
-                                    <v-btn plain color="accent" @click="agbDialog = false"
+                                    <v-btn plain color="primary" @click="agbDialog = false"
                                            class="text-none">Schliessen</v-btn>
                                   </v-col>
                                 </v-row>
@@ -157,10 +157,11 @@
       <v-card-actions v-if="!emailVerify">
         <v-btn block
                large
+               dark
                color="primary"
                :disabled="signupDisabled"
                @click="startSignup"
-               class="text-none font-weight-bold text--font"
+               class="text-none font-weight-bold"
         >Anmelden
         </v-btn>
       </v-card-actions>

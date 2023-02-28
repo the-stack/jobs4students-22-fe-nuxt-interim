@@ -143,10 +143,11 @@ export default {
       light: true,
       themes: {
         light: {
-          primary: '#63c2cd',
-          primaryLight:'#8fc6cc',
-          accent: '#e62154',
-          secondary: '#e62154',
+          primary: '#31417b',
+          primaryLight:'#c8cfe9',
+          accent: '#98874f',
+          fontPrimary: '#31417b',
+          secondary: '#31417b',
           info: '#51831B',
           warning: '#D18F23',
           error: '#BF1B2D',
