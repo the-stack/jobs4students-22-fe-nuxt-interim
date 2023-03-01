@@ -4,11 +4,11 @@
       <v-container class="bg page-students" fluid>
         <v-row dense class="my-0 my-md-16 mx-0 mx-md-4">
           <v-col cols="12" sm="5">
-            <v-card class="pa-5 mt-0 mt-md-16" color="#31417b6E">
+            <v-card class="pa-5 mt-0 mt-md-16" color="#31417bA6">
               <h1 class="text-h2 text--fontPrimary">
                 {{ intro.title }}
               </h1>
-              <nuxt-content :document="intro"/>
+              <nuxt-content class="text--negative" :document="intro"/>
             </v-card>
           </v-col>
         </v-row>
@@ -103,7 +103,7 @@
               <v-col cols="10">
                 <v-hover v-slot="{hover}">
                   <v-carousel v-model="partnerCarousel"
-                              height="234"
+                              height="190"
                               continuous
                               :cycle="!hover"
                               interval="2000"

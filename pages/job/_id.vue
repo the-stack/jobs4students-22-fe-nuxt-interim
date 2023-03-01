@@ -1,7 +1,7 @@
 <template>
   <v-container>
 
-    <h2 class="text-h4 text-md-h2 mb-4">{{vacancy.title}}</h2>
+    <h2 class="text-h4 text-md-h2 mb-4 text--accent">{{vacancy.title}}</h2>
 
     <div v-if="vacancy.published || (vacancy.company_id == userData.company_id)">
 
@@ -34,7 +34,7 @@
       </v-alert>
 
       <!-- nicht eingeloggt -->
-      <v-card v-if="!userData.id" class="mb-6">
+      <v-card v-if="!userData.id" class="mb-6 pa-3">
         <v-card-text>
           Um sich auf diese Stelle bewerben zu können ist ein ausgefülltes Dossier notwendig.
         </v-card-text>
@@ -63,7 +63,7 @@
       </v-card>
 
       <!-- eingeloggt -->
-      <v-card v-if="userData.id && userData.role_id === 1 && !checkApplications" class="mb-6">
+      <v-card v-if="userData.id && userData.role_id === 1 && !checkApplications" class="mb-6 pa-3">
         <v-card-actions>
           <v-row>
             <v-col cols="12" md="12">
@@ -102,22 +102,24 @@
         Hinweis: du hast dich bereits auf diese Stelle beworben
       </v-alert>
 
-      <v-card>
+      <v-card class="pa-3">
         <v-card-text>
 
           <v-row>
+            <v-col cols="12">
+              <h3 v-if="vacancy.desc" v-html="vacancy.desc" class="multiline j4s-paragraph mb-6"></h3>
+            </v-col>
             <v-col cols="12" md="6">
-              <p v-if="vacancy.desc" v-html="vacancy.desc" class="multiline j4s-paragraph"></p>
 
               <strong v-if="vacancy.tasks">Aufgaben:</strong>
-              <p v-if="vacancy.tasks" v-html="vacancy.tasks" class="multiline"></p>
+              <p v-if="vacancy.tasks" v-html="vacancy.tasks" class="multiline j4s-paragraph"></p>
 
               <strong v-if="vacancy.requirements">Anforderungen:</strong>
-              <p v-if="vacancy.requirements" v-html="vacancy.requirements" class="multiline"></p>
+              <p v-if="vacancy.requirements" v-html="vacancy.requirements" class="multiline j4s-paragraph"></p>
 
               <p class="j4s-paragraph">
                 <strong v-if="vacancy.vacancytype_id">Stellentyp: </strong>
-                <span v-if="vacancy.vacancytype_id" v-html="vacancy.vacancytype.title_i18n.de" class="multiline"></span>
+                <span v-if="vacancy.vacancytype_id" v-html="vacancy.vacancytype.title_i18n.de" class="multiline j4s-paragraph"></span>
               </p>
 
               <strong v-if="vacancy.workload_from || vacancy.workload_to">Stellenprozent:</strong>
