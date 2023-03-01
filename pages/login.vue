@@ -24,7 +24,7 @@
                     <v-card-actions>
                       <v-row>
                         <v-col cols="auto" class="pa-5">
-                          <v-btn block color="primary" class="text--font text-none" @click="logoutDialogOpen">Abmelden</v-btn>
+                          <v-btn block color="primary" class="text-none" @click="logoutDialogOpen">Abmelden</v-btn>
                         </v-col>
                       </v-row>
                     </v-card-actions>

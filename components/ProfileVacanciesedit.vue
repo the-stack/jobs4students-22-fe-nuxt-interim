@@ -358,7 +358,7 @@
           block
           depressed
           color="primary"
-          class="black--text"
+          class="negative--text"
           @click="itemAdd"
       >{{ $tc('vacancy.add') }}</v-btn>
 
@@ -368,7 +368,7 @@
           block
           depressed
           color="primary"
-          class="black--text"
+          class="negative--text"
           @click="itemUpdate"
       >{{ $tc('vacancy.update') }}</v-btn>
 
