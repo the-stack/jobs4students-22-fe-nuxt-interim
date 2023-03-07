@@ -22,6 +22,7 @@
       </v-card>
 
       <!-- Unternehmer Account -->
+
       <v-alert
         v-if="userData.id && userData.role_id > 1 && (this.$route.query && !this.$route.query.hasOwnProperty('preview'))"
         type="info"
